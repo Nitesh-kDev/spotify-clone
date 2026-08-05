@@ -2,7 +2,7 @@
 
 A front-end clone of the Spotify Web Player interface, built from scratch with **vanilla HTML, CSS, and JavaScript** — no frameworks, no libraries.
 
-🔗 **Live Demo:** _add your GitHub Pages link here after deploying_
+🔗 **Live Demo:** 
 
 ## Features
 
@@ -34,8 +34,6 @@ spotify-clone/
 │   └── (images — add your own image files here, see note below)
 └── README.md
 ```
-
-> **Note:** Image files are not included in this repo export. Place your song/artist/album cover images inside the `assets/` folder using the same filenames referenced in `index.html` (e.g. `card1.jpg`, `acard1.jpg`, `alcard1.jpg`).
 
 ## Running Locally
 
