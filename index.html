@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <meta name="description" content="A front-end clone of the Spotify Web Player UI built with vanilla HTML, CSS and JavaScript. Features responsive layout, search & filter, and a working player bar UI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/spotify_clone.css">
+    <link rel="icon" sizes="32x32" type="image/png" href="assets/icon.png" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fa-brands fa-spotify fa-2xl" style="color:white"></i>
+            </div>
+            <div class="home_icon">
+                <i class="fa-solid fa-house fa-lg" style="color: white;"></i>
+            </div>
+            <div class="search_bar">
+                <i class="fa fa-search fa-lg"></i>
+                <input type="search" class="search_barBox" placeholder="What do you want to play?" />
+            </div>
+            <div class="link_bar">
+                <div class="link">
+                    <a href="#" class="sub_link">Premium</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="sub_link">Support</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="sub_link">Download</a>
+                </div>
+                <div class="link" id="sub_link2_item">
+                    <i class="fa-regular fa-circle-down"></i>
+                    <a href="#" class="sub_link2">Install App</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="sub_link2">Sign up</a>
+                    <button class="btn_login">Log in</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="library_items">
+                <div class="library">Your Library</div>
+                <div class="plus_item"><i class="fa-solid fa-plus fa-md" style="color: #f4f5f5;"></i></div>
+            </div>
+            <div class="sidebarminibox">
+                <div class="createPlaylist_box">
+                    <p class="createPlaylist_boxP1">Create your first Playlist</p>
+                    <p class="createPlaylist_boxP2">It's easy, we'll help you</p>
+                    <button class="btn_createPlaylist">Create playlist</button>
+                </div>
+                <div class="createPlaylist_box">
+                    <p class="createPlaylist_boxP1">Let's find some podcasts to follow</p>
+                    <p class="createPlaylist_boxP2">We'll keep you update on new episodes</p>
+                    <button class="btn_browsePodcasts">Browse podcasts</button>
+                </div>
+            </div>
+            <div class="document_link">
+                <div class="docusub_link1">Legal</div>
+                <div class="docusub_link2">Safety & privacy Center</div>
+                <div class="docusub_link3">Privacy policy</div>
+                <div class="docusub_link4">Cookies</div>
+                <div class="docusub_link5">About Ads</div>
+                <div class="docusub_link6">Accessibility</div>
+                <div class="docusub_link7">Cookies</div>
+            </div>
+            <div class="languageBox">
+                <p><i class="fa-solid fa-globe"></i>English</p>
+            </div>
+        </div>
+        <div class="box">
+            <h1>Trending songs</h1>
+            <div class="trending_song sub-box">
+                <div class="card-box">
+                    <img src="assets/card1.jpg" class="image-of-Content" alt="Aigiri Nandini song cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card2.jpg" class="image-of-Content" alt="Kesariya song cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card3.jpg" class="image-of-Content" alt="Tere Hawaale song cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card5.jpg" class="image-of-Content" alt="Raataan Lambiyan song cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card (8).jpg" class="image-of-Content" alt="Chaiyya Chaiyya song cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+            </div>
+            <h1>Popular artists</h1>
+            <div class="popular_artist sub-box">
+                <div class="card-box">
+                    <img src="assets/acard1.jpg" class="image-of-artist" alt="Udit Narayan artist photo">
+                    <p class="title-of-song">Udit Narayan</p>
+                    <p class="discription-of-song">Artist</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/acard2.jpg" class="image-of-artist" alt="Arijit Singh artist photo">
+                    <p class="title-of-song">Udit Narayan</p>
+                    <p class="discription-of-song">Artist</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/acard3.jpg" class="image-of-artist" alt="Shreya Ghoshal artist photo">
+                    <p class="title-of-song">Udit Narayan</p>
+                    <p class="discription-of-song">Artist</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/acard4.jpg" class="image-of-artist" alt="Sonu Nigam artist photo">
+                    <p class="title-of-song">Udit Narayan</p>
+                    <p class="discription-of-song">Artist</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/acard5.jpg" class="image-of-artist" alt="Lata Mangeshkar artist photo">
+                    <p class="title-of-song">Udit Narayan</p>
+                    <p class="discription-of-song">Artist</p>
+                </div>
+            </div>
+            <h1>Popular albums and singles</h1>
+            <div class="popular-albums sub-box">
+                <div class="card-box">
+                    <img src="assets/alcard1.jpg" class="image-of-Content" alt="Aashiqui 2 album cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard2.jpg" class="image-of-Content" alt="Rockstar album cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard3.jpg" class="image-of-Content" alt="Barfi album cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard4.jpg" class="image-of-Content" alt="Highway album cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard5.jpg" class="image-of-Content" alt="Tamasha album cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard3.jpg" class="image-of-Content" alt="Dev D album cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard3.jpg" class="image-of-Content" alt="Jab We Met album cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Megahana Bhat, Sahana Bhat</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-main">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <a href="#">About</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">For the Record</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Communities</h3>
+                        <a href="#">For Artists</a>
+                        <a href="#">Developers</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Investors</a>
+                        <a href="#">Vendors</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Useful links</h3>
+                        <a href="#">Support</a>
+                        <a href="#">Free Mobile App</a>
+                        <a href="#">Popular by Country</a>
+                        <a href="#">Import your music</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Spotify Plans</h3>
+                        <a href="#">Premium Standard</a>
+                        <a href="#">Premium Platinum</a>
+                        <a href="#">Premium Student</a>
+                        <a href="#">Spotify Free</a>
+                    </div>
+                    <div class="footer-socials" aria-label="Spotify social links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <hr class="footer-divider">
+                <p class="footer-copy">&copy; 2026 Spotify Clone Made by Nitesh</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-massage bottom-item">
+                <P style="font-size:14px;color:white;font-weight: 600;">Preview of spotify</P>
+                <p style="font-size: 15px;color:white">Sign up to get unlimited songs and podcasts with occasional ads.
+                    No
+                    credit card needed </p>
+            </div>
+            <div class="bottom-button bottom-item"><span><button class="btn-singup">Sign up free </button></span></div>
+        </div>
+    </div>
+    <script src="js/spotify_clone.js"></script>
+</body>
+
+</html>
