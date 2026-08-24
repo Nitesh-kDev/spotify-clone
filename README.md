@@ -2,6 +2,8 @@
 
 A front-end clone of the Spotify Web Player interface, built from scratch with **vanilla HTML, CSS, and JavaScript** — no frameworks, no libraries.
 
+This is an unofficial practice demo and is not affiliated with Spotify.
+
 🔗 **Live Demo:** https://nitesh-kdev.github.io/spotify-clone/
 
 ## Features
