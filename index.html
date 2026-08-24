@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <meta name="description" content="A front-end clone of the Spotify Web Player UI built with vanilla HTML, CSS and JavaScript. Features responsive layout, search & filter, and a working player bar UI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/spotify_clone.css">
+    <link rel="icon" sizes="32x32" type="image/png" href="assets/icon.png" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fa-brands fa-spotify fa-2xl" style="color:white"></i>
+            </div>
+            <div class="home_icon">
+                <i class="fa-solid fa-house fa-lg" style="color: white;"></i>
+            </div>
+            <div class="search_bar">
+                <i class="fa fa-search fa-lg"></i>
+                <input type="search" class="search_barBox" placeholder="What do you want to play?" />
+            </div>
+            <div class="link_bar">
+                <div class="link">
+                    <a href="#" class="sub_link">Premium</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="sub_link">Support</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="sub_link">Download</a>
+                </div>
+                <div class="link" id="sub_link2_item">
+                    <i class="fa-regular fa-circle-down"></i>
+                    <a href="#" class="sub_link2">Install App</a>
+                </div>
+                <div class="link">
+                    <a href="#" class="sub_link2">Sign up</a>
+                    <button class="btn_login">Log in</button>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="library_items">
+                <div class="library">Your Library</div>
+                <div class="plus_item"><i class="fa-solid fa-plus fa-md" style="color: #f4f5f5;"></i></div>
+            </div>
+            <div class="sidebarminibox">
+                <div class="createPlaylist_box">
+                    <p class="createPlaylist_boxP1">Create your first Playlist</p>
+                    <p class="createPlaylist_boxP2">It's easy, we'll help you</p>
+                    <button class="btn_createPlaylist">Create playlist</button>
+                </div>
+                <div class="createPlaylist_box">
+                    <p class="createPlaylist_boxP1">Let's find some podcasts to follow</p>
+                    <p class="createPlaylist_boxP2">We'll keep you update on new episodes</p>
+                    <button class="btn_browsePodcasts">Browse podcasts</button>
+                </div>
+            </div>
+            <div class="document_link">
+                <div class="docusub_link1">Legal</div>
+                <div class="docusub_link2">Safety & privacy Center</div>
+                <div class="docusub_link3">Privacy policy</div>
+                <div class="docusub_link4">Cookies</div>
+                <div class="docusub_link5">About Ads</div>
+                <div class="docusub_link6">Accessibility</div>
+                <div class="docusub_link7">Cookies</div>
+            </div>
+            <div class="languageBox">
+                <p><i class="fa-solid fa-globe"></i>English</p>
+            </div>
+        </div>
+        <div class="box">
+            <h1>Trending songs</h1>
+            <div class="trending_song sub-box">
+                <div class="card-box">
+                    <img src="assets/card1.jpg" class="image-of-Content" alt="Aigiri Nandini song cover">
+                    <p class="title-of-song">Aigiri Nandini</p>
+                    <p class="discription-of-song">Sahana Bhat, Meghana Bhat</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card2.jpg" class="image-of-Content" alt="Maai Ni Maai song cover">
+                    <p class="title-of-song">Maai Ni Maai</p>
+                    <p class="discription-of-song">Sachet Tandon</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card3.jpg" class="image-of-Content" alt="Deewaniyat song cover">
+                    <p class="title-of-song">Deewaniyat</p>
+                    <p class="discription-of-song">Vishal Mishra, Kaushik-Guddu</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card5.jpg" class="image-of-Content" alt="Sohna Nazara Bhawna Da song cover">
+                    <p class="title-of-song">Sohna Nazara Bhawna Da</p>
+                    <p class="discription-of-song">Hans Raj Raghuwanshi</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card (8).jpg" class="image-of-Content" alt="Young G.O.A.T song cover">
+                    <p class="title-of-song">Young G.O.A.T</p>
+                    <p class="discription-of-song">Cheena V, Gur Sidhu</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card9.jpg" class="image-of-Content" alt="Bol Kaffara Kya Hoga song cover">
+                    <p class="title-of-song">Bol Kaffara Kya Hoga</p>
+                    <p class="discription-of-song">Neha Kakkar, Darshan Raval</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card (14).jpg" class="image-of-Content" alt="Guns N' Roses song cover">
+                    <p class="title-of-song">Guns N' Roses</p>
+                    <p class="discription-of-song">From OG · Thaman S</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card (15).jpg" class="image-of-Content" alt="Panwadi song cover">
+                    <p class="title-of-song">Panwadi</p>
+                    <p class="discription-of-song">From Sunny Sanskari Ki Tulsi Kumari</p>
+                </div>
+            </div>
+            <h1>Popular artists</h1>
+            <div class="popular_artist sub-box">
+                <div class="card-box">
+                    <img src="assets/acard1.jpg" class="image-of-artist" alt="Udit Narayan artist photo">
+                    <p class="title-of-song">Udit Narayan</p>
+                    <p class="discription-of-song">Artist</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/acard2.jpg" class="image-of-artist" alt="Arijit Singh artist photo">
+                    <p class="title-of-song">Arijit Singh</p>
+                    <p class="discription-of-song">Artist</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/acard9.jpg" class="image-of-artist" alt="A.R. Rahman artist photo">
+                    <p class="title-of-song">A.R. Rahman</p>
+                    <p class="discription-of-song">Artist</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/acard4.jpg" class="image-of-artist" alt="Karan Aujla artist photo">
+                    <p class="title-of-song">Karan Aujla</p>
+                    <p class="discription-of-song">Artist</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/acard5.jpg" class="image-of-artist" alt="Amit Trivedi artist photo">
+                    <p class="title-of-song">Amit Trivedi</p>
+                    <p class="discription-of-song">Music Composer</p>
+                </div>
+            </div>
+            <h1>Popular albums and singles</h1>
+            <div class="popular-albums sub-box">
+                <div class="card-box">
+                    <img src="assets/alcard1.jpg" class="image-of-Content" alt="Aashiqui 2 album cover">
+                    <p class="title-of-song">Aashiqui 2</p>
+                    <p class="discription-of-song">Mithoon, Jeet Gannguli, Ankit Tiwari</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard2.jpg" class="image-of-Content" alt="Sanam Teri Kasam album cover">
+                    <p class="title-of-song">Sanam Teri Kasam</p>
+                    <p class="discription-of-song">Soundtrack</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard3.jpg" class="image-of-Content" alt="Finding Her EP cover">
+                    <p class="title-of-song">Finding Her</p>
+                    <p class="discription-of-song">EP</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard4.jpg" class="image-of-Content" alt="Kai Po Che album cover">
+                    <p class="title-of-song">Kai Po Che</p>
+                    <p class="discription-of-song">Amit Trivedi</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/alcard5.jpg" class="image-of-Content" alt="Raanjhan song cover">
+                    <p class="title-of-song">Raanjhan</p>
+                    <p class="discription-of-song">Sachin-Jigar · From Do Patti</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card (13).jpg" class="image-of-Content" alt="Ultimate Love Songs album cover">
+                    <p class="title-of-song">Ultimate Love Songs</p>
+                    <p class="discription-of-song">Arijit Singh</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/card (12).jpg" class="image-of-Content" alt="Almost Loved EP cover">
+                    <p class="title-of-song">Almost Loved</p>
+                    <p class="discription-of-song">Bhoomi · EP</p>
+                </div>
+            </div>
+            <h1>Charts</h1>
+            <div class="charts sub-box">
+                <div class="card-box">
+                    <img src="assets/topcard1.jpg" class="image-of-Content" alt="Top 50 India chart cover">
+                    <p class="title-of-song">Top 50: India</p>
+                    <p class="discription-of-song">Your daily update of the most played tracks right now</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/topcard2.jpg" class="image-of-Content" alt="Top 50 Global chart cover">
+                    <p class="title-of-song">Top 50: Global</p>
+                    <p class="discription-of-song">Your daily update of the most played tracks right now</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/topcard3.jpg" class="image-of-Content" alt="Top Songs Global chart cover">
+                    <p class="title-of-song">Top Songs Global</p>
+                    <p class="discription-of-song">Weekly Music Charts</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/topcard4.jpg" class="image-of-Content" alt="Top Songs India chart cover">
+                    <p class="title-of-song">Top Songs India</p>
+                    <p class="discription-of-song">Weekly Music Charts</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/viralcard1.jpg" class="image-of-Content" alt="Viral 50 India chart cover">
+                    <p class="title-of-song">Viral 50: India</p>
+                    <p class="discription-of-song">The most viral tracks right now, India</p>
+                </div>
+                <div class="card-box">
+                    <img src="assets/viralcard2.jpg" class="image-of-Content" alt="Viral 50 Global chart cover">
+                    <p class="title-of-song">Viral 50: Global</p>
+                    <p class="discription-of-song">The most viral tracks right now, Global</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-main">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <a href="#">About</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">For the Record</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Communities</h3>
+                        <a href="#">For Artists</a>
+                        <a href="#">Developers</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Investors</a>
+                        <a href="#">Vendors</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Useful links</h3>
+                        <a href="#">Support</a>
+                        <a href="#">Free Mobile App</a>
+                        <a href="#">Popular by Country</a>
+                        <a href="#">Import your music</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Spotify Plans</h3>
+                        <a href="#">Premium Standard</a>
+                        <a href="#">Premium Platinum</a>
+                        <a href="#">Premium Student</a>
+                        <a href="#">Spotify Free</a>
+                    </div>
+                    <div class="footer-socials" aria-label="Spotify social links">
+                        <a href="#" class="social-link" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <hr class="footer-divider">
+                <p class="footer-copy">&copy; 2026 Spotify Clone Made by Nitesh</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-massage bottom-item">
+                <P style="font-size:14px;color:white;font-weight: 600;">Preview of spotify</P>
+                <p style="font-size: 15px;color:white">Sign up to get unlimited songs and podcasts with occasional ads.
+                    No
+                    credit card needed </p>
+            </div>
+            <div class="bottom-button bottom-item"><span><button class="btn-singup">Sign up free </button></span></div>
+        </div>
+    </div>
+    <script src="js/spotify_clone.js"></script>
+</body>
+
+</html>
