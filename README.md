@@ -4,7 +4,7 @@ A front-end clone of the Spotify Web Player interface, built from scratch with *
 
 This is an unofficial practice demo and is not affiliated with Spotify.
 
-🔗 **Live Demo:** https://nitesh-kdev.github.io/spotify-clone/
+🔗 **Live Demo:**
 
 ## Features
 
